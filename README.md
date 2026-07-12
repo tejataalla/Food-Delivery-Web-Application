@@ -43,7 +43,6 @@ Food-Delivery/
 * Improved DOM manipulation and event handling skills.
 * Practiced creating a clean and organized front-end project structure.
 
-## 👨‍💻 Author
 
-**Taalla Teja**
+
 
