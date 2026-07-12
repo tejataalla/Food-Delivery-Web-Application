@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="TastyBites - Order delicious food from your favorite restaurants. Fast delivery, amazing taste!">
+    <title>TastyBites - Food Delivery | Order Food Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page">
+        <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-icon">🍔</span>
+                    <span class="logo-text">Tasty<span class="highlight">Bites</span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#popular">Popular</a></li>
+                    <li><a href="#app">Get App</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn-login" id="btn-login">Login</button>
+                    <button class="btn-signup" id="btn-signup">Sign Up</button>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="video-container">
+                <video autoplay muted loop playsinline id="hero-video">
+                    <source
+                        src="https://assets.mixkit.co/videos/preview/mixkit-top-aerial-shot-of-seashore-702-large.mp4"
+                        type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-badge">🔥 #1 Food Delivery App</div>
+                <h1 class="hero-title">
+                    Delicious Food,
+                    <span class="gradient-text">Delivered Fast</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Discover the best restaurants near you. Order from 10,000+ restaurants with lightning-fast delivery.
+                    Fresh, hot, and right at your doorstep!
+                </p>
+                <div class="hero-search">
+                    <div class="search-box">
+                        <span class="search-icon">📍</span>
+                        <input type="text" placeholder="Enter your delivery address..." id="address-input">
+                        <button class="btn-order-now" id="btn-order-now">Order Now</button>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Restaurants</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500K+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">20min</span>
+                        <span class="stat-label">Avg Delivery</span>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <span>Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories" id="categories">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Discover</span>
+                    <h2 class="section-title">Explore Food Categories</h2>
+                    <p class="section-subtitle">From street food to fine dining, we have everything you crave</p>
+                </div>
+                <div class="categories-grid">
+                    <div class="category-card" data-category="pizza">
+                        <div class="category-icon">🍕</div>
+                        <h3>Pizza</h3>
+                        <span class="category-count">120+ Options</span>
+                    </div>
+                    <div class="category-card" data-category="burger">
+                        <div class="category-icon">🍔</div>
+                        <h3>Burgers</h3>
+                        <span class="category-count">80+ Options</span>
+                    </div>
+                    <div class="category-card" data-category="sushi">
+                        <div class="category-icon">🍣</div>
+                        <h3>Sushi</h3>
+                        <span class="category-count">60+ Options</span>
+                    </div>
+                    <div class="category-card" data-category="indian">
+                        <div class="category-icon">🍛</div>
+                        <h3>Indian</h3>
+                        <span class="category-count">200+ Options</span>
+                    </div>
+                    <div class="category-card" data-category="chinese">
+                        <div class="category-icon">🥡</div>
+                        <h3>Chinese</h3>
+                        <span class="category-count">150+ Options</span>
+                    </div>
+                    <div class="category-card" data-category="desserts">
+                        <div class="category-icon">🍰</div>
+                        <h3>Desserts</h3>
+                        <span class="category-count">100+ Options</span>
+                    </div>
+                    <div class="category-card" data-category="healthy">
+                        <div class="category-icon">🥗</div>
+                        <h3>Healthy</h3>
+                        <span class="category-count">90+ Options</span>
+                    </div>
+                    <div class="category-card" data-category="beverages">
+                        <div class="category-icon">🥤</div>
+                        <h3>Beverages</h3>
+                        <span class="category-count">70+ Options</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works" id="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Simple Process</span>
+                    <h2 class="section-title">How It Works</h2>
+                    <p class="section-subtitle">Order your favorite food in just 3 simple steps</p>
+                </div>
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number">01</div>
+                        <div class="step-icon">📍</div>
+                        <h3>Choose Location</h3>
+                        <p>Enter your delivery address to find restaurants near you</p>
+                    </div>
+                    <div class="step-connector"></div>
+                    <div class="step-card">
+                        <div class="step-number">02</div>
+                        <div class="step-icon">🍽️</div>
+                        <h3>Select Food</h3>
+                        <p>Browse menus and add your favorite dishes to cart</p>
+                    </div>
+                    <div class="step-connector"></div>
+                    <div class="step-card">
+                        <div class="step-number">03</div>
+                        <div class="step-icon">🚀</div>
+                        <h3>Fast Delivery</h3>
+                        <p>Sit back and relax while we deliver hot food to you</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Restaurants Section -->
+        <section class="popular-restaurants" id="popular">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Top Rated</span>
+                    <h2 class="section-title">Popular Restaurants</h2>
+                    <p class="section-subtitle">Most loved restaurants by our customers</p>
+                </div>
+                <div class="restaurants-preview">
+                    <div class="restaurant-preview-card">
+                        <div class="restaurant-image" style="background: linear-gradient(135deg, #ff6b6b, #ee5a24);">
+                        </div>
+                        <div class="restaurant-badge">⭐ 4.5</div>
+                        <div class="restaurant-info">
+                            <h4>Pizza Paradise</h4>
+                            <p>Italian • Pizza • Pasta</p>
+                            <span class="delivery-time">🕐 25-30 min</span>
+                        </div>
+                    </div>
+                    <div class="restaurant-preview-card">
+                        <div class="restaurant-image" style="background: linear-gradient(135deg, #22a6b3, #0984e3);">
+                        </div>
+                        <div class="restaurant-badge">⭐ 4.8</div>
+                        <div class="restaurant-info">
+                            <h4>Royal Spice</h4>
+                            <p>Indian • Biryani • Curry</p>
+                            <span class="delivery-time">🕐 30-35 min</span>
+                        </div>
+                    </div>
+                    <div class="restaurant-preview-card">
+                        <div class="restaurant-image" style="background: linear-gradient(135deg, #f9ca24, #f0932b);">
+                        </div>
+                        <div class="restaurant-badge">⭐ 4.6</div>
+                        <div class="restaurant-info">
+                            <h4>Burger King</h4>
+                            <p>American • Burgers • Fries</p>
+                            <span class="delivery-time">🕐 20-25 min</span>
+                        </div>
+                    </div>
+                    <div class="restaurant-preview-card">
+                        <div class="restaurant-image" style="background: linear-gradient(135deg, #686de0, #4834d4);">
+                        </div>
+                        <div class="restaurant-badge">⭐ 4.7</div>
+                        <div class="restaurant-info">
+                            <h4>Sushi Master</h4>
+                            <p>Japanese • Sushi • Ramen</p>
+                            <span class="delivery-time">🕐 35-40 min</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-all-container">
+                    <button class="btn-view-all" id="btn-view-all">View All Restaurants →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Super Fast Delivery</h3>
+                        <p>Get your food delivered in under 30 minutes or it's free!</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💳</div>
+                        <h3>Easy Payment</h3>
+                        <p>Multiple payment options including cards, wallets, and COD</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎁</div>
+                        <h3>Best Offers</h3>
+                        <p>Exclusive discounts and deals on every order</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Live Tracking</h3>
+                        <p>Track your order in real-time from kitchen to doorstep</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- App Download Section -->
+        <section class="app-section" id="app">
+            <div class="container">
+                <div class="app-content">
+                    <div class="app-text">
+                        <span class="section-tag">Mobile App</span>
+                        <h2>Get The App Now!</h2>
+                        <p>Download our mobile app for a better experience. Get exclusive app-only offers and easy
+                            ordering on the go!</p>
+                        <div class="app-buttons">
+                            <button class="app-btn">
+                                <span class="app-icon">🍎</span>
+                                <div class="app-btn-text">
+                                    <small>Download on</small>
+                                    <strong>App Store</strong>
+                                </div>
+                            </button>
+                            <button class="app-btn">
+                                <span class="app-icon">🤖</span>
+                                <div class="app-btn-text">
+                                    <small>Get it on</small>
+                                    <strong>Google Play</strong>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-image">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <div class="app-preview">
+                                    <div class="app-header-mock">TastyBites</div>
+                                    <div class="app-content-mock">
+                                        <div class="mock-item"></div>
+                                        <div class="mock-item"></div>
+                                        <div class="mock-item"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <span class="logo-icon">🍔</span>
+                            <span class="logo-text">Tasty<span class="highlight">Bites</span></span>
+                        </div>
+                        <p>Your favorite food, delivered fast and fresh. Order from the best restaurants in your city.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">📘</a>
+                            <a href="#" class="social-link">📸</a>
+                            <a href="#" class="social-link">🐦</a>
+                            <a href="#" class="social-link">📺</a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Live Chat</a></li>
+                            <li><a href="#">Email Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 TastyBites. All rights reserved. Made with ❤️ for food lovers.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Restaurants Page (Hidden by default) -->
+    <div id="restaurants-page" class="hidden">
+        <!-- Restaurant Page Navbar -->
+        <nav class="navbar restaurant-navbar" id="restaurant-navbar">
+            <div class="nav-container">
+                <div class="logo" id="back-to-home">
+                    <span class="logo-icon">🍔</span>
+                    <span class="logo-text">Tasty<span class="highlight">Bites</span></span>
+                </div>
+                <div class="search-bar-nav">
+                    <span class="search-icon-nav">🔍</span>
+                    <input type="text" placeholder="Search for restaurants or dishes..." id="search-restaurants">
+                </div>
+                <div class="nav-actions">
+                    <div class="cart-icon" id="cart-icon">
+                        <span class="cart-emoji">🛒</span>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </div>
+                    <button class="btn-login">Profile</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Filters Section -->
+        <section class="filters-section">
+            <div class="container">
+                <div class="filters-row">
+                    <div class="filter-chips">
+                        <button class="filter-chip active" data-filter="all">All</button>
+                        <button class="filter-chip" data-filter="rating">⭐ Rating 4.0+</button>
+                        <button class="filter-chip" data-filter="fast">⚡ Fast Delivery</button>
+                        <button class="filter-chip" data-filter="offers">🎁 Offers</button>
+                        <button class="filter-chip" data-filter="veg">🥬 Pure Veg</button>
+                        <button class="filter-chip" data-filter="nonveg">🍖 Non-Veg</button>
+                    </div>
+                    <div class="sort-dropdown">
+                        <select id="sort-by">
+                            <option value="relevance">Sort by: Relevance</option>
+                            <option value="rating">Rating: High to Low</option>
+                            <option value="delivery">Delivery Time</option>
+                            <option value="cost-low">Cost: Low to High</option>
+                            <option value="cost-high">Cost: High to Low</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cuisines Scroll -->
+        <section class="cuisines-scroll">
+            <div class="container">
+                <h3>What's on your mind?</h3>
+                <div class="cuisines-container" id="cuisines-container">
+                    <!-- Cuisines will be added by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Restaurants Grid -->
+        <section class="restaurants-section">
+            <div class="container">
+                <h2 class="restaurants-title">Restaurants Near You</h2>
+                <div class="restaurants-grid" id="restaurants-grid">
+                    <!-- Restaurants will be added by JS -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Restaurant Detail Modal -->
+    <div id="restaurant-modal" class="modal hidden">
+        <div class="modal-content restaurant-modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="restaurant-detail-header" id="restaurant-detail-header">
+                <!-- Header content loaded by JS -->
+            </div>
+            <div class="menu-section">
+                <h3>Menu</h3>
+                <div class="menu-categories" id="menu-categories">
+                    <!-- Categories loaded by JS -->
+                </div>
+                <div class="menu-items" id="menu-items">
+                    <!-- Menu items loaded by JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar hidden">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close" id="cart-close">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items loaded by JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-amount">₹0</span>
+            </div>
+            <button class="btn-checkout" id="btn-checkout">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div id="cart-overlay" class="cart-overlay hidden"></div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+        <span id="toast-message"></span>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal hidden">
+        <div class="modal-content auth-modal">
+            <button class="modal-close" id="login-modal-close">&times;</button>
+            <div class="auth-header">
+                <h2>Welcome Back!</h2>
+                <p>Login to continue ordering</p>
+            </div>
+            <form id="login-form">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn-submit">Login</button>
+            </form>
+            <p class="auth-switch">Don't have an account? <a href="#" id="switch-to-signup">Sign Up</a></p>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signup-modal" class="modal hidden">
+        <div class="modal-content auth-modal">
+            <button class="modal-close" id="signup-modal-close">&times;</button>
+            <div class="auth-header">
+                <h2>Create Account</h2>
+                <p>Join TastyBites today</p>
+            </div>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="tel" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Create a password" required>
+                </div>
+                <button type="submit" class="btn-submit">Sign Up</button>
+            </form>
+            <p class="auth-switch">Already have an account? <a href="#" id="switch-to-login">Login</a></p>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="modal hidden">
+        <div class="modal-content checkout-modal">
+            <button class="modal-close" id="checkout-modal-close">&times;</button>
+            <div class="checkout-header">
+                <h2>🎉 Order Placed Successfully!</h2>
+            </div>
+            <div class="checkout-content">
+                <div class="order-animation">
+                    <div class="delivery-bike">🛵</div>
+                </div>
+                <p class="checkout-message">Your delicious food is being prepared and will be delivered soon!</p>
+                <div class="order-details">
+                    <div class="order-detail-item">
+                        <span>Order ID:</span>
+                        <strong id="order-id">#TB12345</strong>
+                    </div>
+                    <div class="order-detail-item">
+                        <span>Estimated Delivery:</span>
+                        <strong id="delivery-time">30-35 mins</strong>
+                    </div>
+                </div>
+                <button class="btn-track-order" id="btn-track-order">Track Order</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
